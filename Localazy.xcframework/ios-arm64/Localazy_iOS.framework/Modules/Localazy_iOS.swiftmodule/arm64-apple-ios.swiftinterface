@@ -1,0 +1,108 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Localazy_iOS
+import Combine
+import Foundation
+@_exported import Localazy_iOS
+import OSLog
+import Swift
+import ZIPFoundation
+public enum NetworkManagerError : Swift.Error {
+  case noResponse
+  case unexpectedHttpResponse(statusCode: Swift.Int?)
+  case urlError(error: Foundation.URLError)
+  case decodingError(error: Swift.Error?, json: Swift.String?)
+  case unknownError(error: Swift.Error?)
+  case cannotCreateUrl
+}
+extension NetworkManagerError : Foundation.LocalizedError {
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public protocol NetworkManagerDefinition {
+  func process(urlRequest: Foundation.URLRequest, retryCount: Swift.UInt) -> Combine.AnyPublisher<Foundation.Data, Localazy_iOS.NetworkManagerError>
+  func process<T>(urlRequest: Foundation.URLRequest, retryCount: Swift.UInt, decoder: Foundation.JSONDecoder) -> Combine.AnyPublisher<(T, Swift.String?), Localazy_iOS.NetworkManagerError> where T : Swift.Decodable, T : Swift.Encodable
+  func process<T>(urlRequest: Foundation.URLRequest, retryCount: Swift.UInt, decoder: Foundation.JSONDecoder) -> Combine.AnyPublisher<T, Localazy_iOS.NetworkManagerError> where T : Swift.Decodable, T : Swift.Encodable
+  func invalidateAndCancel()
+  func invalidateOldAndSetNewSession()
+}
+@_hasMissingDesignatedInitializers final public class LocalazyLocale {
+  @objc deinit
+}
+extension LocalazyLocale : Swift.CustomStringConvertible {
+  final public var description: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class LocalazyId {
+  final public var langId: Swift.UInt32 {
+    get
+  }
+  final public var projectId: Swift.String {
+    get
+  }
+  final public var phraseId: Swift.UInt64 {
+    get
+  }
+  final public var hidden: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class Localazy : ObjectiveC.NSObject {
+  public typealias LangID = Swift.UInt16
+  public static let shared: Localazy_iOS.Localazy
+  final public var projectId: Swift.String? {
+    get
+  }
+  final public var statsEnabled: Swift.Bool {
+    get
+  }
+  final public var configurationFromAdditionalData: Swift.Bool {
+    get
+  }
+  final public var updateInterval: Swift.UInt32 {
+    get
+  }
+  final public var updateIntervalForFailure: Swift.UInt32 {
+    get
+  }
+  final public var statsInterval: Swift.UInt32 {
+    get
+  }
+  final public var statsIntervalForFailure: Swift.UInt32 {
+    get
+  }
+  final public var updateDelay: Swift.UInt32 {
+    get
+  }
+  final public var statsDelay: Swift.UInt32 {
+    get
+  }
+  final public var minimalStatsSize: Swift.UInt32 {
+    get
+  }
+  final public var maximalStatsSize: Swift.UInt32 {
+    get
+  }
+  final public var updateForActivityOnly: Swift.Bool {
+    get
+  }
+  final public var sendStatsRegularly: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
+extension Localazy {
+  final public func getString(for key: Swift.String) -> Swift.String
+  final public func getArrayList(for key: Swift.String) -> [Swift.String]
+  final public func getPlural(for key: Swift.String, quantity: Swift.Int) -> Swift.String
+  final public func setEnabled(_ isEnabled: Swift.Bool)
+  final public func setStatsEnabled(_ isStatsEnabled: Swift.Bool)
+  final public func getProjectUrl() -> Foundation.URL?
+  final public func getCurrentLocale() -> Swift.String?
+  final public func getCurrentLocalazyLocale() -> Localazy_iOS.LocalazyLocale?
+  final public func isFullyTranslated() -> Swift.Bool
+  final public func getLocales() -> [Localazy_iOS.LocalazyLocale]
+}
