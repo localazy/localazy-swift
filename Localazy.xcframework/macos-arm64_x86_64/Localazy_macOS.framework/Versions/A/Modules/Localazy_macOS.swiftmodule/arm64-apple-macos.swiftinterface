@@ -6,7 +6,6 @@ import Foundation
 @_exported import Localazy_macOS
 import OSLog
 import Swift
-import ZIPFoundation
 @_hasMissingDesignatedInitializers final public class LocalazyLocale {
   @objc deinit
 }

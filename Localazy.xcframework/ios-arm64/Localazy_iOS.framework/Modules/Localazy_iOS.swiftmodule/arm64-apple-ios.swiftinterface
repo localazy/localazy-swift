@@ -6,7 +6,6 @@ import Foundation
 @_exported import Localazy_iOS
 import OSLog
 import Swift
-import ZIPFoundation
 public enum NetworkManagerError : Swift.Error {
   case noResponse
   case unexpectedHttpResponse(statusCode: Swift.Int?)

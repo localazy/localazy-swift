@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/ZIPFoundation.framework/Info.plist</key>
+		<data>
+		YDFTk9Wjo2SmgORuvPY7R5PxpAA=
+		</data>
+		<key>Frameworks/ZIPFoundation.framework/ZIPFoundation</key>
+		<data>
+		7DQ/pyrms2L27CxtAslZxJIsjoI=
+		</data>
+		<key>Frameworks/ZIPFoundation.framework/_CodeSignature/CodeResources</key>
+		<data>
+		jykz8ZfnvRaRhIvCk6A0Ww03t2M=
+		</data>
 		<key>Headers/Localazy_iOS-Swift.h</key>
 		<data>
 		iE+PPxrlE2ukp5oNM8XJEL4JeA8=
@@ -26,11 +38,11 @@
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		2cAcwXLXKGn/AcHtbkjJej0H4VQ=
+		+z3QiyoxsMyUxa7KcgM+fzpJkJc=
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Ny731i+Z1nNCKX6iTjQs85YqGM4=
+		tQgdZD6jY71WzMio3yamHfePm2M=
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,11 +50,11 @@
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		2cAcwXLXKGn/AcHtbkjJej0H4VQ=
+		+z3QiyoxsMyUxa7KcgM+fzpJkJc=
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Ny731i+Z1nNCKX6iTjQs85YqGM4=
+		tQgdZD6jY71WzMio3yamHfePm2M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,6 +63,27 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/ZIPFoundation.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N+DmQXmYD8qGqTkuQgSLqhNHZaFgea1Jx8xSaIocQkU=
+			</data>
+		</dict>
+		<key>Frameworks/ZIPFoundation.framework/ZIPFoundation</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1M9/kWlDSUEcok1Pj348BREgiTcwLUy0QUsQq95HZ3c=
+			</data>
+		</dict>
+		<key>Frameworks/ZIPFoundation.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TmQxxyXXxYfeqbFzNOvVEmZmVMUx/M63mbImvgNcsD4=
+			</data>
+		</dict>
 		<key>Headers/Localazy_iOS-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -83,14 +116,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C7yPPNkx5jx4E3+Z56h+lff4c0WSCv8XC1Cua+YtmBY=
+			AiTMqvLSR6+GfrATfcxz0KYp7lh3ug/BN6F1rVlHdxU=
 			</data>
 		</dict>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vQlCrR7eIP8gYlJ22vC9LlJHYT3kbnCPRcES9lqErfE=
+			UMEZi/4fVTomWgCEx6RYJK7Ic0FpsQL1CBLW/AjLpu8=
 			</data>
 		</dict>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftdoc</key>
@@ -104,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C7yPPNkx5jx4E3+Z56h+lff4c0WSCv8XC1Cua+YtmBY=
+			AiTMqvLSR6+GfrATfcxz0KYp7lh3ug/BN6F1rVlHdxU=
 			</data>
 		</dict>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vQlCrR7eIP8gYlJ22vC9LlJHYT3kbnCPRcES9lqErfE=
+			UMEZi/4fVTomWgCEx6RYJK7Ic0FpsQL1CBLW/AjLpu8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

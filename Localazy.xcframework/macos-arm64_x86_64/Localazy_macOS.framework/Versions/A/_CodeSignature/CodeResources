@@ -15,6 +15,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/ZIPFoundation.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			WOMVk15Ol8lZhTAh38ug6ZRp6vM=
+			</data>
+			<key>requirement</key>
+			<string>identifier "com.peakstep.ZIPFoundation" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Jaroslav Pulik (LT8J8H958Q)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		</dict>
 		<key>Headers/Localazy_macOS-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -40,14 +49,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/joh5al00+yKiD/n9GO68pbaa6BCas9r5KwIUgTDsh8=
+			Up3X9XqHQ53Ar9Lq65uYH3pVyfI7XAh7VutJQI216+8=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			psbREL6yJdv16v/TpLTFsPxD2cjaJuRq6o+XQz5EgEk=
+			0Nb1nAZfoM8PEyM7HjyzrbJW3yC5iu5NFIfywb9FG9w=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64.swiftdoc</key>
@@ -61,14 +70,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/joh5al00+yKiD/n9GO68pbaa6BCas9r5KwIUgTDsh8=
+			Up3X9XqHQ53Ar9Lq65uYH3pVyfI7XAh7VutJQI216+8=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			psbREL6yJdv16v/TpLTFsPxD2cjaJuRq6o+XQz5EgEk=
+			0Nb1nAZfoM8PEyM7HjyzrbJW3yC5iu5NFIfywb9FG9w=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
@@ -82,14 +91,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oJ984j0vqLtXhOakNo8MHZ2OSvtUyjp+fXlhJ57aORY=
+			DjJ/iqGOFh7I1ziL/KApRiNPWEjwQzbIFITNEUl/5bU=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zmCp4wtWGoT3tB5xk3KkdetaxrAvHRd2ASv2u9QYUdM=
+			uhVjXRjFmBquu1fhH5OyuYIyQ7ZOyK3WqxSeWSHZmPk=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64.swiftdoc</key>
@@ -103,14 +112,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oJ984j0vqLtXhOakNo8MHZ2OSvtUyjp+fXlhJ57aORY=
+			DjJ/iqGOFh7I1ziL/KApRiNPWEjwQzbIFITNEUl/5bU=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zmCp4wtWGoT3tB5xk3KkdetaxrAvHRd2ASv2u9QYUdM=
+			uhVjXRjFmBquu1fhH5OyuYIyQ7ZOyK3WqxSeWSHZmPk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
