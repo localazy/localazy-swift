@@ -6,29 +6,20 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		3RS9xvc2v5r6E0AhEGGFpBQs/W0=
+		nu3AjVSmGN4XzwtDTKvC3hSpvHw=
 		</data>
-		<key>Resources/Localazy-UT.plist</key>
+		<key>Resources/Localazy-debug.plist</key>
 		<data>
-		S+SCk4E5v6FfjrY1e/nvVM4NqWM=
+		mFCFblCg/aREV6sB+hyly6xvyNU=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/ZIPFoundation.framework</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			WOMVk15Ol8lZhTAh38ug6ZRp6vM=
-			</data>
-			<key>requirement</key>
-			<string>identifier "com.peakstep.ZIPFoundation" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Jaroslav Pulik (LT8J8H958Q)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
-		</dict>
 		<key>Headers/Localazy_macOS-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4tyoZGxZ/ckqHjeFAMhEVRoMUufyNBZBSL7FmxnKTTA=
+			AUEaGdkkWGn+CUVTRLcd9k/DPkqqNk1Mqh+qm7ZLNm4=
 			</data>
 		</dict>
 		<key>Headers/Localazy_macOS.h</key>
@@ -42,84 +33,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zVrdZ45/Gcy1xpcWXgLu9CQybqMjZFkISeaD4DGGRwU=
+			J+xDkdY2j/3n44OUJPlWerHtBS65a3VlGfqgxrhg/JY=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Up3X9XqHQ53Ar9Lq65uYH3pVyfI7XAh7VutJQI216+8=
+			niU0de+9aUnrZSgMWj3wPF0ljTskFNVqIGPqjtOGtkg=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Nb1nAZfoM8PEyM7HjyzrbJW3yC5iu5NFIfywb9FG9w=
+			lxu5I/eRdlnL5yOGz7Hcsc5UwNqUoVHFGWYH5fUm4ck=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zVrdZ45/Gcy1xpcWXgLu9CQybqMjZFkISeaD4DGGRwU=
+			J+xDkdY2j/3n44OUJPlWerHtBS65a3VlGfqgxrhg/JY=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Up3X9XqHQ53Ar9Lq65uYH3pVyfI7XAh7VutJQI216+8=
+			niU0de+9aUnrZSgMWj3wPF0ljTskFNVqIGPqjtOGtkg=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Nb1nAZfoM8PEyM7HjyzrbJW3yC5iu5NFIfywb9FG9w=
+			lxu5I/eRdlnL5yOGz7Hcsc5UwNqUoVHFGWYH5fUm4ck=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			drGn0oAu5wWDRBka5s1JJN6cG1wjW/n5OIRiIfPCzdg=
+			CIIkg+s+97k6K/MKAU+xxoGfKuayApH6SWKP7Um43cw=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DjJ/iqGOFh7I1ziL/KApRiNPWEjwQzbIFITNEUl/5bU=
+			DksIRv+D+wstD6NF0V+4/M46UGVPbFQUvMSsp5uAGCs=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uhVjXRjFmBquu1fhH5OyuYIyQ7ZOyK3WqxSeWSHZmPk=
+			Im8Dzl7wZXz7JUfp2JGELwJvM0BwmoAeuRipZW++KwY=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			drGn0oAu5wWDRBka5s1JJN6cG1wjW/n5OIRiIfPCzdg=
+			CIIkg+s+97k6K/MKAU+xxoGfKuayApH6SWKP7Um43cw=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DjJ/iqGOFh7I1ziL/KApRiNPWEjwQzbIFITNEUl/5bU=
+			DksIRv+D+wstD6NF0V+4/M46UGVPbFQUvMSsp5uAGCs=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uhVjXRjFmBquu1fhH5OyuYIyQ7ZOyK3WqxSeWSHZmPk=
+			Im8Dzl7wZXz7JUfp2JGELwJvM0BwmoAeuRipZW++KwY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -133,14 +124,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UFr1MWNp0zY8SpRgyCPfd+NFzGiljj2toJBQkJrCGCs=
+			7qtCn3F991tIGzKZZvmdFXx0jQjx2iMG+1LiXcKVBvg=
 			</data>
 		</dict>
-		<key>Resources/Localazy-UT.plist</key>
+		<key>Resources/Localazy-debug.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d6nV135E5vvqAKZqwoA4uqovynstKSc5yR1QcTQ0zGw=
+			1zbiQwks0aZCAU2KAy9Ea7BwFSaud4lfA3o2+OEo0zc=
 			</data>
 		</dict>
 	</dict>
