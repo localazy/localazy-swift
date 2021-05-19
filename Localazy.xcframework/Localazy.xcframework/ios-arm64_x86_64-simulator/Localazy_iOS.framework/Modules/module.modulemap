@@ -1,0 +1,11 @@
+framework module Localazy_iOS {
+  umbrella header "Localazy_iOS.h"
+
+  export *
+  module * { export * }
+}
+
+module Localazy_iOS.Swift {
+    header "Localazy_iOS-Swift.h"
+    requires objc
+}
