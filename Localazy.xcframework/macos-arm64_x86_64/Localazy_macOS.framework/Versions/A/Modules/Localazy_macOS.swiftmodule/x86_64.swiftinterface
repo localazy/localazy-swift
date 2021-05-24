@@ -7,26 +7,15 @@ import Foundation
 @_exported import Localazy_macOS
 import OSLog
 import Swift
+import SwiftUI
 public struct StatisticsConfiguration {
-  public var configurationFromAdditionalData: Swift.Bool {
-    get
-  }
   public var statsEnabled: Swift.Bool {
-    get
-  }
-  @Localazy_macOS.MinimalValue public var updateInterval: Swift.Int32 {
-    get
-  }
-  @Localazy_macOS.MinimalValue public var updateIntervalForFailure: Swift.Int32 {
     get
   }
   @Localazy_macOS.MinimalValue public var statsInterval: Swift.Int32 {
     get
   }
   @Localazy_macOS.MinimalValue public var statsIntervalForFailure: Swift.Int32 {
-    get
-  }
-  @Localazy_macOS.MinimalValue public var updateDelay: Swift.Int32 {
     get
   }
   @Localazy_macOS.MinimalValue public var statsDelay: Swift.Int32 {
@@ -38,12 +27,11 @@ public struct StatisticsConfiguration {
   public var maximalStatsSize: Swift.Int32 {
     get
   }
-  public var updateForActivityOnly: Swift.Bool {
-    get
-  }
   public var sendStatsRegularly: Swift.Bool {
     get
   }
+}
+extension StatisticsConfiguration {
 }
 @propertyWrapper public struct MinimalValue<Value> where Value : Swift.Comparable, Value : Swift.ExpressibleByIntegerLiteral {
   public var wrappedValue: Value {
@@ -111,6 +99,9 @@ extension LocalazyLocale : Swift.CustomStringConvertible {
     }
   }
   public static let shared: Localazy_macOS.Localazy
+  final public var isEnabled: Swift.Bool {
+    get
+  }
   final public var projectId: Swift.String? {
     get
   }
@@ -152,6 +143,12 @@ extension String {
   public var localazyLocalized: Swift.String {
     get
   }
+}
+extension Bundle {
+  public static func swizzleLocalizationWithLocalazy()
+}
+extension Text {
+  public init(localazyKey placeholder: Swift.String)
 }
 extension Localazy_macOS.Localazy.LocalazyError : Swift.Equatable {}
 extension Localazy_macOS.Localazy.LocalazyError : Swift.Hashable {}

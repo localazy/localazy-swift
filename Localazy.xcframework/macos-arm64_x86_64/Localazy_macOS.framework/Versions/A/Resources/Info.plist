@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Localazy_macOS</string>
 	<key>CFBundleIdentifier</key>
-	<string>sk.pulik.jaroslav.Localazy-macOS</string>
+	<string>com.localazy.sdk.mac</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.0</string>
+	<string>1.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>

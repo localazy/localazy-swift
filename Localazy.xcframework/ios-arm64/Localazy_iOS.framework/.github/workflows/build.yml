@@ -1,0 +1,31 @@
+name: Build library
+on:
+  push:
+    branches: [ main, develop ]
+    tags: [ '*' ]
+  pull_request:
+    branches: [ main, develop ]
+env: 
+  MACOS_CERTIFICATE: ${{ secrets.MACOS_CERTIFICATE }}
+  MACOS_CERTIFICATE_PWD: ${{ secrets.MACOS_CERTIFICATE_PWD }}
+  GIT_KEY: ${{secrets.GIT_KEY}} 
+jobs:
+  build:
+    runs-on: [self-hosted, macOS]
+    steps:
+      - name: Get Tag
+        if: ${{contains(github.ref,'refs/tags')}}
+        id: tag        
+        uses: dawidd6/action-get-tag@v1.0.0   
+      - uses: actions/checkout@v2
+      - name: Run unit tests
+        run: ./test_script.sh
+      - name: Build script
+        run: ./build_script.sh
+      - name: Codesign framework
+        run:  /usr/bin/codesign --force -s 134264D28C51A9CA141E78BB62C419D8A140FD34 ./build/Localazy.xcframework -v
+      - name: Release library
+        if: ${{contains(github.ref,'refs/tags')}}
+        run: | 
+          echo $GIT_KEY > git_key
+          ./release_script.sh ${{steps.tag.outputs.tag}}
