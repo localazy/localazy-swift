@@ -6,7 +6,7 @@
 	<dict>
 		<key>.github/workflows/build.yml</key>
 		<data>
-		wH+0duZE/HvffVS+tt+8cL7ADrM=
+		nk9G9pnka0+n/OpoS4UaTfhmQas=
 		</data>
 		<key>Headers/Localazy_iOS-Swift.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CK3No0hkY870yjpWWmNVB/H5xg0=
+		JkTv/iIJBHi85i78Ya4Ox4S8ewU=
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		CK3No0hkY870yjpWWmNVB/H5xg0=
+		JkTv/iIJBHi85i78Ya4Ox4S8ewU=
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FSwTbSKyFZcdhdy3t76cprmY2xI=
+		NjEyQ4sE16b/AJUxFBoJMbEogOI=
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		FSwTbSKyFZcdhdy3t76cprmY2xI=
+		NjEyQ4sE16b/AJUxFBoJMbEogOI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sYyXrMpjbrRPvTZGjWtcNUSm1eyF0yJF/Se4jnDMTmM=
+			jCdw8ppOyH7pE0EJA0r6RinsjcS4jEvDtmnTLM6r3Kc=
 			</data>
 		</dict>
 		<key>Headers/Localazy_iOS-Swift.h</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dE7nAFW92tv21xHc+R51aJAQ/w1ujPNPOzkwo6cUsEY=
+			K/zUdhCJbTTMsMkLIMh5+dtRq+AmT5MqyyCsarrq2HU=
 			</data>
 		</dict>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftdoc</key>
@@ -154,7 +154,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dE7nAFW92tv21xHc+R51aJAQ/w1ujPNPOzkwo6cUsEY=
+			K/zUdhCJbTTMsMkLIMh5+dtRq+AmT5MqyyCsarrq2HU=
 			</data>
 		</dict>
 		<key>Modules/Localazy_iOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -175,7 +175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SUpzfwoPbSHLwNHcBBBIHU7hyv7HocVO3MriuOa/uRA=
+			RdAkV4OXqb7T6PLL45WWXdP7BCTWiP56qKpZCVizY3E=
 			</data>
 		</dict>
 		<key>Modules/Localazy_iOS.swiftmodule/x86_64.swiftdoc</key>
@@ -196,7 +196,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SUpzfwoPbSHLwNHcBBBIHU7hyv7HocVO3MriuOa/uRA=
+			RdAkV4OXqb7T6PLL45WWXdP7BCTWiP56qKpZCVizY3E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

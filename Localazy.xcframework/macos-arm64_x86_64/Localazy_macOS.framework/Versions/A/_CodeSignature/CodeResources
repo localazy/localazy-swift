@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xsA/krxewqnPz4ee3JI3Ley5O5EEDQMdTfjK0hLfKEI=
+			lRNpIoWjzADcI0EZG2Eu26aIn6fX8Krl/f2Pn2//zgM=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64.swiftdoc</key>
@@ -68,7 +68,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xsA/krxewqnPz4ee3JI3Ley5O5EEDQMdTfjK0hLfKEI=
+			lRNpIoWjzADcI0EZG2Eu26aIn6fX8Krl/f2Pn2//zgM=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zxapPNLmJxeULWvidkMzu1IWuKr7xcL9Tq4yi9uCDDA=
+			DcGouHKAy7nKNXib9E/sv7r8vk9XIrMTwIaVcv1hU+I=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64.swiftdoc</key>
@@ -110,7 +110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zxapPNLmJxeULWvidkMzu1IWuKr7xcL9Tq4yi9uCDDA=
+			DcGouHKAy7nKNXib9E/sv7r8vk9XIrMTwIaVcv1hU+I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
