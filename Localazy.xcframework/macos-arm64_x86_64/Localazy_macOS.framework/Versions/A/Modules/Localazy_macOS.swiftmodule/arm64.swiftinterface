@@ -121,6 +121,11 @@ extension Localazy {
   final public func isStatsEnabled() -> Swift.Bool
   final public func setStatsEnabled(_ statsEnabled: Swift.Bool)
 }
+extension Array {
+  public subscript(index: Swift.Int, default defaultValue: @autoclosure () -> Element) -> Element {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers final public class LocalazyID {
   final public var langId: Localazy_macOS.Localazy.LangID {
     get

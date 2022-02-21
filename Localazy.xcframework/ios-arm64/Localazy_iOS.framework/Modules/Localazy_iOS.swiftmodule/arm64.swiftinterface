@@ -121,6 +121,11 @@ extension LocalazyLocale : Swift.CustomStringConvertible {
     get
   }
 }
+extension Array {
+  public subscript(index: Swift.Int, default defaultValue: @autoclosure () -> Element) -> Element {
+    get
+  }
+}
 extension String {
   public var localazyLocalized: Swift.String {
     get
