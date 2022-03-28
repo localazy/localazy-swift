@@ -124,6 +124,7 @@ NSLocalizedString("Hello", comment: "Hello")
 ### 🔌 Public API
 
 - `forceReload`: Invalidate internal caches and reload data from server
+- `forceLocale`: Set locale independently from system settings (allows for custom language selectors)
 - `getString`: Get translated String
 - `getArrayList`: Translated List
 - `getPlural`: Translated String with plurals
