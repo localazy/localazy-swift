@@ -56,10 +56,6 @@
 		<data>
 		AqgKXLp6U7Zsb1Ghh/Ro5G44weY=
 		</data>
-		<key>build_script.sh</key>
-		<data>
-		NY1LEXOjchndEdxvi5i5Gy6M+JU=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -145,13 +141,6 @@
 			<key>hash2</key>
 			<data>
 			u29wF8H4o9oivbOzR2Keey9ZbFIXSRaCSgrMv3F9fRw=
-			</data>
-		</dict>
-		<key>build_script.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wvJin/6nEcBje2vLgo8eZ5LPJAeCiUHJNnzPH7HiWGc=
 			</data>
 		</dict>
 	</dict>
