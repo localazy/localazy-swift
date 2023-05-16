@@ -6,6 +6,6 @@ framework module Localazy_iOS {
 }
 
 module Localazy_iOS.Swift {
-    header "Localazy_iOS-Swift.h"
-    requires objc
+  header "Localazy_iOS-Swift.h"
+  requires objc
 }

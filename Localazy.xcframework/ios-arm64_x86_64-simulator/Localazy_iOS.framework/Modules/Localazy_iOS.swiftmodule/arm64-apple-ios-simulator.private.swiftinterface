@@ -1,25 +1,27 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target x86_64-apple-macos10.15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Localazy_macOS
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Localazy_iOS
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
 import Compression
 import Foundation
-@_exported import Localazy_macOS
+@_exported import Localazy_iOS
 import OSLog
 import Swift
 import SwiftUI
 import _Concurrency
+import _StringProcessing
 public struct StatisticsConfiguration {
   public var statsEnabled: Swift.Bool {
     get
   }
-  @Localazy_macOS.MinimalValue public var statsInterval: Swift.Int32 {
+  @Localazy_iOS.MinimalValue public var statsInterval: Swift.Int32 {
     get
   }
-  @Localazy_macOS.MinimalValue public var statsIntervalForFailure: Swift.Int32 {
+  @Localazy_iOS.MinimalValue public var statsIntervalForFailure: Swift.Int32 {
     get
   }
-  @Localazy_macOS.MinimalValue public var statsDelay: Swift.Int32 {
+  @Localazy_iOS.MinimalValue public var statsDelay: Swift.Int32 {
     get
   }
   public var minimalStatsSize: Swift.Int32 {
@@ -47,13 +49,59 @@ extension Foundation.NSNotification.Name {
   public static let localazyStringsUpdateNotNecessary: Foundation.Notification.Name
   public static let localazyStringsLoaded: Foundation.Notification.Name
 }
-extension Localazy_macOS.Localazy.LocalazyError : Foundation.LocalizedError {
+extension Localazy_iOS.Localazy.LocalazyError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class Localazy : ObjectiveC.NSObject {
+  public typealias LangID = Swift.UInt16
+  public typealias TranslationKeyID = Swift.UInt
+  public enum LocalazyError : Swift.Error {
+    case invalidRequest
+    case invalidAuthorization
+    case invalidAppPackageOrCertificate
+    case updatePackageNotFound
+    case accountLimit
+    case libraryOutdated
+    case tooManyRequests
+    case unknown
+    public static func == (a: Localazy_iOS.Localazy.LocalazyError, b: Localazy_iOS.Localazy.LocalazyError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static let shared: Localazy_iOS.Localazy
+  final public var isEnabled: Swift.Bool {
+    get
+  }
+  final public var projectId: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension Localazy_iOS.Localazy {
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func forceReload() async
+  #endif
+  @_Concurrency.MainActor final public func getString(for key: Swift.String) -> Swift.String
+  @_Concurrency.MainActor final public func getArrayList(for key: Swift.String) -> [Swift.String]
+  @_Concurrency.MainActor final public func getPlural(for key: Swift.String, quantity: Swift.Int) -> Swift.String
+  final public func setEnabled(_ isEnabled: Swift.Bool)
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor final public func forceLocale(_ locale: Foundation.Locale?, persistent: Swift.Bool) async
+  #endif
+  final public func getProjectUrl() -> Foundation.URL?
+  @_Concurrency.MainActor final public func getCurrentLocale() -> Foundation.Locale?
+  @_Concurrency.MainActor final public func getCurrentLocalazyLocale() -> Localazy_iOS.LocalazyLocale?
+  @_Concurrency.MainActor final public func isFullyTranslated() -> Swift.Bool
+  @_Concurrency.MainActor final public func getLocales() -> [Localazy_iOS.LocalazyLocale]
+  final public func isStatsEnabled() -> Swift.Bool
+  final public func setStatsEnabled(_ statsEnabled: Swift.Bool)
+}
 @_hasMissingDesignatedInitializers final public class LocalazyLocale {
-  final public var localazyId: Localazy_macOS.Localazy.LangID {
+  final public var localazyId: Localazy_iOS.Localazy.LangID {
     get
   }
   final public var language: Swift.String {
@@ -74,74 +122,32 @@ extension Localazy_macOS.Localazy.LocalazyError : Foundation.LocalizedError {
   final public var complete: Swift.Bool
   @objc deinit
 }
-extension Localazy_macOS.LocalazyLocale : Swift.CustomStringConvertible {
+extension Localazy_iOS.LocalazyLocale : Swift.CustomStringConvertible {
   final public var description: Swift.String {
     get
   }
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class Localazy : ObjectiveC.NSObject {
-  public typealias LangID = Swift.UInt16
-  public typealias TranslationKeyID = Swift.UInt
-  public enum LocalazyError : Swift.Error {
-    case invalidRequest
-    case invalidAuthorization
-    case invalidAppPackageOrCertificate
-    case updatePackageNotFound
-    case accountLimit
-    case libraryOutdated
-    case tooManyRequests
-    case unknown
-    public static func == (a: Localazy_macOS.Localazy.LocalazyError, b: Localazy_macOS.Localazy.LocalazyError) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public static let shared: Localazy_macOS.Localazy
-  final public var isEnabled: Swift.Bool {
-    get
-  }
-  final public var projectId: Swift.String? {
-    get
-  }
-  @objc deinit
-}
-extension Localazy_macOS.Localazy {
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func forceReload() async
-  #endif
-
-  final public func getString(for key: Swift.String) -> Swift.String
-  final public func getArrayList(for key: Swift.String) -> [Swift.String]
-  final public func getPlural(for key: Swift.String, quantity: Swift.Int) -> Swift.String
-  final public func setEnabled(_ isEnabled: Swift.Bool)
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func forceLocale(_ locale: Foundation.Locale?, persistent: Swift.Bool) async
-  #endif
-
-  final public func getProjectUrl() -> Foundation.URL?
-  final public func getCurrentLocale() -> Foundation.Locale?
-  final public func getCurrentLocalazyLocale() -> Localazy_macOS.LocalazyLocale?
-  final public func isFullyTranslated() -> Swift.Bool
-  final public func getLocales() -> [Localazy_macOS.LocalazyLocale]
-  final public func isStatsEnabled() -> Swift.Bool
-  final public func setStatsEnabled(_ statsEnabled: Swift.Bool)
 }
 extension Swift.Array {
   public subscript(index: Swift.Int, default defaultValue: @autoclosure () -> Element) -> Element {
     get
   }
 }
+extension Swift.String {
+  @_Concurrency.MainActor public var localazyLocalized: Swift.String {
+    get
+  }
+}
+extension Foundation.Bundle {
+  public static func swizzleLocalizationWithLocalazy()
+}
 @_hasMissingDesignatedInitializers final public class LocalazyID {
-  final public var langId: Localazy_macOS.Localazy.LangID {
+  final public var langId: Localazy_iOS.Localazy.LangID {
     get
   }
   final public var projectId: Swift.String {
     get
   }
-  final public var phraseId: Localazy_macOS.Localazy.TranslationKeyID {
+  final public var phraseId: Localazy_iOS.Localazy.TranslationKeyID {
     get
   }
   final public var hidden: Swift.Bool {
@@ -152,50 +158,36 @@ extension Swift.Array {
   }
   @objc deinit
 }
-extension Swift.String {
-  public var localazyLocalized: Swift.String {
-    get
-  }
-}
-extension Foundation.Bundle {
-  public static func swizzleLocalizationWithLocalazy()
-}
 @available(iOS, deprecated: 15.0, message: "Use the built-in API instead")
 @available(macOS, deprecated: 12.0, message: "Use the built-in API instead")
-extension Localazy_macOS.URLSessionProtocol {
-  
+extension Localazy_iOS.URLSessionProtocol {
   #if compiler(>=5.3) && $AsyncAwait
   public func data(for urlRequest: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
   #endif
-
 }
 public protocol URLSessionProtocol {
   func invalidateAndCancel()
   func getAllTasks(completionHandler: @escaping ([Foundation.URLSessionTask]) -> Swift.Void)
-  func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void) -> Localazy_macOS.URLSessionDataTaskProtocol
+  func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void) -> Localazy_iOS.URLSessionDataTaskProtocol
   func dataTaskPublisher(for request: Foundation.URLRequest) -> Foundation.URLSession.DataTaskPublisher
-  
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 15.0, macOS 12.0, *)
   func data(for request: Foundation.URLRequest, delegate: Foundation.URLSessionTaskDelegate?) async throws -> (Foundation.Data, Foundation.URLResponse)
   #endif
-
-  
   #if compiler(>=5.3) && $AsyncAwait
   func data(for urlRequest: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
   #endif
-
 }
-extension Foundation.URLSession : Localazy_macOS.URLSessionProtocol {
-  public func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void) -> Localazy_macOS.URLSessionDataTaskProtocol
+extension Foundation.URLSession : Localazy_iOS.URLSessionProtocol {
+  public func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void) -> Localazy_iOS.URLSessionDataTaskProtocol
 }
 public protocol URLSessionDataTaskProtocol {
   func resume()
 }
-extension Foundation.URLSessionDataTask : Localazy_macOS.URLSessionDataTaskProtocol {
+extension Foundation.URLSessionDataTask : Localazy_iOS.URLSessionDataTaskProtocol {
 }
 extension SwiftUI.Text {
-  public init(localazyKey placeholder: Swift.String)
+  @_Concurrency.MainActor public init(localazyKey placeholder: Swift.String)
 }
-extension Localazy_macOS.Localazy.LocalazyError : Swift.Equatable {}
-extension Localazy_macOS.Localazy.LocalazyError : Swift.Hashable {}
+extension Localazy_iOS.Localazy.LocalazyError : Swift.Equatable {}
+extension Localazy_iOS.Localazy.LocalazyError : Swift.Hashable {}

@@ -6,11 +6,11 @@
 	<dict>
 		<key>.github/workflows/build.yml</key>
 		<data>
-		nk9G9pnka0+n/OpoS4UaTfhmQas=
+		2Sx2hcqDfIB8xxpW8upvtYmL6Aw=
 		</data>
 		<key>Headers/Localazy_iOS-Swift.h</key>
 		<data>
-		pdZMVP8OB8JMFjrE1hXIn/mJIns=
+		YthBAXgoc0niQJdR+g+C4LEMhKU=
 		</data>
 		<key>Headers/Localazy_iOS.h</key>
 		<data>
@@ -18,39 +18,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		owedihw1G2ASGlTg/e0CNVETK90=
+		RifHnYRd0Jrpimq7O3XyuYeixqw=
 		</data>
 		<key>Localazy.plist</key>
 		<data>
 		+hiwSTjOWXBH2TElapoXsA4VDh4=
 		</data>
+		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		0f7cH8BmCxq7FBT8cct+GglWam0=
+		</data>
+		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		XiBots4ZbpNcVVuEiBfz25BhERs=
+		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		mKWva/TdjxVkA0uSRirMgmtp/44=
+		RdYOlTctFV7ogOCPVFgqz8NcJWo=
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		KhIbi5kIWnQ50xwfETyuLG7MyYg=
+		XiBots4ZbpNcVVuEiBfz25BhERs=
 		</data>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		iTa6/JR35ctHC3nPUDAGvDigLZk=
-		</data>
-		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		mKWva/TdjxVkA0uSRirMgmtp/44=
-		</data>
-		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		KhIbi5kIWnQ50xwfETyuLG7MyYg=
-		</data>
-		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		iTa6/JR35ctHC3nPUDAGvDigLZk=
+		7mteR++xCnFM/ksUAd+DSB+mwK0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		bz4XVxp9RVh5uBTdYlstUyjkywk=
+		rjyfOWe3z0Q2jngYbCDhtqEjJ9Q=
 		</data>
 		<key>README.md</key>
 		<data>
@@ -63,14 +59,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jCdw8ppOyH7pE0EJA0r6RinsjcS4jEvDtmnTLM6r3Kc=
+			h1/Pfr1KvCCB7tVMxiwIwQaCfGC8i7eRvHfXirsnmig=
 			</data>
 		</dict>
 		<key>Headers/Localazy_iOS-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W1sHlsQ5QJjo+L9ovMsf3LwMNYs+eHoxYN4Vlt+bFWI=
+			4RAQ4NYe/E0k+ePlcmZ3UmvbQyQ6J4h9Q2sPM9zl0uc=
 			</data>
 		</dict>
 		<key>Headers/Localazy_iOS.h</key>
@@ -87,53 +83,46 @@
 			dNbrFBWRopiG5U3R/r55l51l/guWEjnvdTTQ/pk8vsc=
 			</data>
 		</dict>
+		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mJXmr4kXjLkKaXTKeXLECRi4Bm2kQ9WBQT3bv27Zt9A=
+			</data>
+		</dict>
+		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QGmOfTfNegrHr4yZKE0ix8XZoav4QiNci9BiHMb9uhM=
+			</data>
+		</dict>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sdvcO2Xf5jzlC103NDHEl6X1CIOgdxCLaSysWoF6Y/8=
+			vUrMA1xctNoa14wfjRxTi+QuiVbm2ygaUucxZ6YWdB4=
 			</data>
 		</dict>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xt6Dhzv30Ds/p2HAGLsm/wqDFtSiVHx7KszgB9yQJWE=
+			QGmOfTfNegrHr4yZKE0ix8XZoav4QiNci9BiHMb9uhM=
 			</data>
 		</dict>
 		<key>Modules/Localazy_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zBt2dukDTV8eiwwkE0NyJa96Ngnj53LAWzuqIZFPVSI=
-			</data>
-		</dict>
-		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sdvcO2Xf5jzlC103NDHEl6X1CIOgdxCLaSysWoF6Y/8=
-			</data>
-		</dict>
-		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xt6Dhzv30Ds/p2HAGLsm/wqDFtSiVHx7KszgB9yQJWE=
-			</data>
-		</dict>
-		<key>Modules/Localazy_iOS.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zBt2dukDTV8eiwwkE0NyJa96Ngnj53LAWzuqIZFPVSI=
+			NqMn5JGVDvgD+TVGGwOGzx/tkkldnPMHsZXPjKh5g/M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			isz+T1GkfzlNk/fEeyooa8+qOesLVetcOrnmJbyqN6Y=
+			np1SgjBAIWgB9kYM8GzHbYEvbLgwyTaYsiEADcbcBNY=
 			</data>
 		</dict>
 		<key>README.md</key>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		9JG+D2KO4iGjShH9gMGfTwMFLJ4=
+		z7Ol3KO67aZ2D3yseeI6ILpth04=
 		</data>
 		<key>Resources/Localazy.plist</key>
 		<data>
@@ -19,7 +19,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aese83F1N2MyO6SZ2FxJ0EB1RoVlm0eSEpBGI2wlGfs=
+			1Fj3tHYfo3Q5W3I5A995/G1I03on6mUfNyroXb1gZTY=
 			</data>
 		</dict>
 		<key>Headers/Localazy_macOS.h</key>
@@ -29,102 +29,88 @@
 			BiIX4LFV2tg0/PhBbZ1OHzaqxlj+7+eqXz3lzSzS1Ow=
 			</data>
 		</dict>
+		<key>Modules/Localazy_macOS.swiftmodule/arm64-apple-macos.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EepK8KtCLTAeWK3PY2ZntU2mtGueqUihU4aBeKFRHQw=
+			</data>
+		</dict>
+		<key>Modules/Localazy_macOS.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oJv5RY60r+0WM3uJLgUI+iQUmH+x/HWvFU346xGNXmA=
+			</data>
+		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+jbiZooreHAkQbl7Ba+Eci4ZFA1PyipDXGSfhqxX+XA=
+			Frzq1Wi7ajq7Kxw7fZcE+40OVsWbSDZ94kqB7vIexqc=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jKfumfitUFnzNeXupQgyPk8Sm/4Q+iNStyntCYym3yo=
+			oJv5RY60r+0WM3uJLgUI+iQUmH+x/HWvFU346xGNXmA=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FSO348adbfg0T48YUB3odDnZcetOmrWm5qVW01Wo+GM=
+			0JC+guRWNA1m2HXnwaUQ925vcdcrse/TVB+n94gY1Dc=
 			</data>
 		</dict>
-		<key>Modules/Localazy_macOS.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+jbiZooreHAkQbl7Ba+Eci4ZFA1PyipDXGSfhqxX+XA=
+			EepK8KtCLTAeWK3PY2ZntU2mtGueqUihU4aBeKFRHQw=
 			</data>
 		</dict>
-		<key>Modules/Localazy_macOS.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jKfumfitUFnzNeXupQgyPk8Sm/4Q+iNStyntCYym3yo=
-			</data>
-		</dict>
-		<key>Modules/Localazy_macOS.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FSO348adbfg0T48YUB3odDnZcetOmrWm5qVW01Wo+GM=
+			IjBMWi3wQsmw5qPIlArBFtQwR6aYmVjvXiQ/fwZOTwQ=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rOcbTeNlg2VZJ61SjfpIBuPHe8mZI250znLMaWzTxFM=
+			rubFtU9iMSZLcc9QkRcAyehfCz4PNvQNiNOxyZ06iRU=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1x5RtDa8KPipoSKCWrMBYNoW1WpkALYgtZgdGDan67Y=
+			IjBMWi3wQsmw5qPIlArBFtQwR6aYmVjvXiQ/fwZOTwQ=
 			</data>
 		</dict>
 		<key>Modules/Localazy_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9y9onHqklb7tk8QZ2uLZwPsqjHBkpazCLv5O0tBcjFA=
-			</data>
-		</dict>
-		<key>Modules/Localazy_macOS.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rOcbTeNlg2VZJ61SjfpIBuPHe8mZI250znLMaWzTxFM=
-			</data>
-		</dict>
-		<key>Modules/Localazy_macOS.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1x5RtDa8KPipoSKCWrMBYNoW1WpkALYgtZgdGDan67Y=
-			</data>
-		</dict>
-		<key>Modules/Localazy_macOS.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9y9onHqklb7tk8QZ2uLZwPsqjHBkpazCLv5O0tBcjFA=
+			Wk9wJiy1pzFutN/Mwk7FdxzMxn//lApP0YVdvqFyKHA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jAgUrPm8Rtb4Ue35e8mx72l13jOo2G3wa+XI92GQuTs=
+			FgRJi5yQbRaFhleEL4amZ5Hvtd4MT2qt3OiGp5irlbw=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d/cMP2chwVxnGW22sabPVHjrgl55jDQYvEUwtsm5BQ4=
+			vn9zI6BxlvpMuozlRHnqjnpORJwUGXo/Bq0Wncmn+sU=
 			</data>
 		</dict>
 		<key>Resources/Localazy.plist</key>

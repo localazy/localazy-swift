@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Localazy_iOS
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
 import Compression
 import Foundation
@@ -9,6 +10,7 @@ import OSLog
 import Swift
 import SwiftUI
 import _Concurrency
+import _StringProcessing
 public struct StatisticsConfiguration {
   public var statsEnabled: Swift.Bool {
     get
@@ -80,25 +82,21 @@ extension Localazy_iOS.Localazy.LocalazyError : Foundation.LocalizedError {
   @objc deinit
 }
 extension Localazy_iOS.Localazy {
-  
   #if compiler(>=5.3) && $AsyncAwait
   final public func forceReload() async
   #endif
-
-  final public func getString(for key: Swift.String) -> Swift.String
-  final public func getArrayList(for key: Swift.String) -> [Swift.String]
-  final public func getPlural(for key: Swift.String, quantity: Swift.Int) -> Swift.String
+  @_Concurrency.MainActor final public func getString(for key: Swift.String) -> Swift.String
+  @_Concurrency.MainActor final public func getArrayList(for key: Swift.String) -> [Swift.String]
+  @_Concurrency.MainActor final public func getPlural(for key: Swift.String, quantity: Swift.Int) -> Swift.String
   final public func setEnabled(_ isEnabled: Swift.Bool)
-  
   #if compiler(>=5.3) && $AsyncAwait
-  final public func forceLocale(_ locale: Foundation.Locale?, persistent: Swift.Bool) async
+  @_Concurrency.MainActor final public func forceLocale(_ locale: Foundation.Locale?, persistent: Swift.Bool) async
   #endif
-
   final public func getProjectUrl() -> Foundation.URL?
-  final public func getCurrentLocale() -> Foundation.Locale?
-  final public func getCurrentLocalazyLocale() -> Localazy_iOS.LocalazyLocale?
-  final public func isFullyTranslated() -> Swift.Bool
-  final public func getLocales() -> [Localazy_iOS.LocalazyLocale]
+  @_Concurrency.MainActor final public func getCurrentLocale() -> Foundation.Locale?
+  @_Concurrency.MainActor final public func getCurrentLocalazyLocale() -> Localazy_iOS.LocalazyLocale?
+  @_Concurrency.MainActor final public func isFullyTranslated() -> Swift.Bool
+  @_Concurrency.MainActor final public func getLocales() -> [Localazy_iOS.LocalazyLocale]
   final public func isStatsEnabled() -> Swift.Bool
   final public func setStatsEnabled(_ statsEnabled: Swift.Bool)
 }
@@ -135,7 +133,7 @@ extension Swift.Array {
   }
 }
 extension Swift.String {
-  public var localazyLocalized: Swift.String {
+  @_Concurrency.MainActor public var localazyLocalized: Swift.String {
     get
   }
 }
@@ -163,28 +161,22 @@ extension Foundation.Bundle {
 @available(iOS, deprecated: 15.0, message: "Use the built-in API instead")
 @available(macOS, deprecated: 12.0, message: "Use the built-in API instead")
 extension Localazy_iOS.URLSessionProtocol {
-  
   #if compiler(>=5.3) && $AsyncAwait
   public func data(for urlRequest: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
   #endif
-
 }
 public protocol URLSessionProtocol {
   func invalidateAndCancel()
   func getAllTasks(completionHandler: @escaping ([Foundation.URLSessionTask]) -> Swift.Void)
   func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void) -> Localazy_iOS.URLSessionDataTaskProtocol
   func dataTaskPublisher(for request: Foundation.URLRequest) -> Foundation.URLSession.DataTaskPublisher
-  
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 15.0, macOS 12.0, *)
   func data(for request: Foundation.URLRequest, delegate: Foundation.URLSessionTaskDelegate?) async throws -> (Foundation.Data, Foundation.URLResponse)
   #endif
-
-  
   #if compiler(>=5.3) && $AsyncAwait
   func data(for urlRequest: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
   #endif
-
 }
 extension Foundation.URLSession : Localazy_iOS.URLSessionProtocol {
   public func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void) -> Localazy_iOS.URLSessionDataTaskProtocol
@@ -195,7 +187,7 @@ public protocol URLSessionDataTaskProtocol {
 extension Foundation.URLSessionDataTask : Localazy_iOS.URLSessionDataTaskProtocol {
 }
 extension SwiftUI.Text {
-  public init(localazyKey placeholder: Swift.String)
+  @_Concurrency.MainActor public init(localazyKey placeholder: Swift.String)
 }
 extension Localazy_iOS.Localazy.LocalazyError : Swift.Equatable {}
 extension Localazy_iOS.Localazy.LocalazyError : Swift.Hashable {}

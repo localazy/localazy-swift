@@ -23,9 +23,11 @@ jobs:
       - name: Build script
         run: ./build_script.sh
       - name: Codesign framework
-        run:  /usr/bin/codesign --force -s 5EC587B51F5CF370DEB7778ABAD89689C6A3819D ./build/Localazy.xcframework -v
+        run:  /usr/bin/codesign --force -s 87F7ED3DE0156C9FB60B54D89B6C15FCD9ACC4FC ./build/Localazy.xcframework -v                
       - name: Release library
         if: ${{contains(github.ref,'refs/tags')}}
         run: | 
           echo $GIT_KEY > git_key
+          cat git_key
+          chmod 600 git_key
           ./release_script.sh ${{steps.tag.outputs.tag}}
